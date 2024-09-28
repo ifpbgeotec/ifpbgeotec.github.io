@@ -1,0 +1,46 @@
+# Node modules (caso esteja utilizando um projeto com Node.js)
+node_modules/
+npm-debug.log
+
+# MacOS arquivos de sistema
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Iconos e arquivos temporários do macOS
+Icon?
+._*
+
+# Logs do sistema e informações do crash reports
+*.log
+*.lock
+*.gz
+
+# Arquivos de cache
+.cache
+*.tmp
+*.swp
+
+# Configurações de editores de código
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de build do Jekyll (se estiver usando)
+_site/
+
+# Arquivos de configuração do ambiente Python (caso esteja usando)
+venv/
+.env
+
+# Minificações e pacotes
+dist/
+build/
+
+# Arquivos de cobertura de testes
+coverage/
+
+# Outras pastas de dependências
+bower_components/
+
