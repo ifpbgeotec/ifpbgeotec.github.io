@@ -34,25 +34,9 @@
             display: table;
         }
 
-        .gmap_canvas {
-            overflow: hidden;
-            position: relative;
-            height: 400px;
-            width: 590px;
-            background: #fff;
-        }
-
-        .gmap_canvas iframe {
-            position: relative !important;
-            z-index: 2 !important;
-        }
-
-        .gmap_canvas a {
-            color: #fff !important;
-            position: absolute !important;
-            top: 0 !important;
-            left: 0 !important;
-            z-index: 0 !important;
+        .table td {
+            word-wrap: break-word; /* Quebra as palavras longas */
+            overflow-wrap: break-word; /* Quebra as palavras longas */
         }
     </style>
 
@@ -82,27 +66,9 @@
             <ul>
                 <li><a href="#hero" class="active">Início</a></li>
                 <li><a href="#about">Programação</a></li>
-                <!--                <li><a href="#services">Palestras</a></li>-->
-                <!--                <li><a href="#portfolio">...</a></li>-->
                 <li><a href="#team">Palestrantes</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <!--          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
-                <!--            <ul>-->
-                <!--              <li><a href="#">Dropdown 1</a></li>-->
-                <!--              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
-                <!--                <ul>-->
-                <!--                  <li><a href="#">Deep Dropdown 1</a></li>-->
-                <!--                  <li><a href="#">Deep Dropdown 2</a></li>-->
-                <!--                  <li><a href="#">Deep Dropdown 3</a></li>-->
-                <!--                  <li><a href="#">Deep Dropdown 4</a></li>-->
-                <!--                  <li><a href="#">Deep Dropdown 5</a></li>-->
-                <!--                </ul>-->
-                <!--              </li>-->
-                <!--              <li><a href="#">Dropdown 2</a></li>-->
-                <!--              <li><a href="#">Dropdown 3</a></li>-->
-                <!--              <li><a href="#">Dropdown 4</a></li>-->
-                <!--            </ul>-->
-                <!--          </li>-->
+
                 <li><a href="#contact">Contato</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -132,49 +98,53 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <h2>Programação<br></h2>
-
-            <table class="table table-bordered table-hover table-striped">
-                <thead class="thead-dark text-center">
-                <tr>
-                    <th scope="col">HORÁRIOS</th>
-                    <th scope="col">TERÇA-FEIRA</th>
-                    <th scope="col">QUARTA-FEIRA</th>
-                    <th scope="col">QUINTA-FEIRA</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="text-center align-middle">8h - 9h30</td>
-                    <td>Abertura - Ciência de Dados Geográficos: A Nova Era do Geoprocessamento - Anderson Medeiros</td>
-                    <td>Mesa Redonda: Alunos Egressos</td>
-                    <td>João Firmino: Tratando dados espaço-temporais para predizer destinos: como encontrar trajetos
-                        repetidos
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-center align-middle">9h30 - 10h</td>
-                    <td colspan="3" class="text-center font-weight-bold">COFFE BREAK</td>
-                </tr>
-                <tr>
-                    <td class="text-center align-middle">10h - 11h</td>
-                    <td>Cledson / Alexandre: Uso de drone no Cadastro Urbano</td>
-                    <td>Marcello Benigno: Desenvolvendo aplicações SIG-Web com o GeoDjango</td>
-                    <td>Leandro França</td>
-                </tr>
-                <tr>
-                    <td class="text-center align-middle">11h - 12h</td>
-                    <td>Norma de Georreferenciamento / Uso de drone para obtenção de limites</td>
-                    <td>Geração da Cartografia para o Cadastro por Drone</td>
-                    <td>Palestrante 7</td>
-                </tr>
-                <tr>
-                    <td class="text-center align-middle">14h - 18h</td>
-                    <td>Minicurso 01: Introdução ao R aplicado ao Geoprocessamento</td>
-                    <td>Minicurso 02: Confecção de mapas com o uso do QGis / Práticas com Estação Total</td>
-                    <td>Minicurso 03: GNSS Aplicado ao Mapeamento com Drone</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead class="thead-dark text-center">
+                    <tr>
+                        <th scope="col">HORÁRIOS</th>
+                        <th scope="col">TERÇA-FEIRA</th>
+                        <th scope="col">QUARTA-FEIRA</th>
+                        <th scope="col">QUINTA-FEIRA</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="text-center align-middle">8h - 9h30</td>
+                        <td>Abertura - Ciência de Dados Geográficos: A Nova Era do Geoprocessamento - Anderson
+                            Medeiros
+                        </td>
+                        <td>Mesa Redonda: Alunos Egressos</td>
+                        <td>João Firmino: Tratando dados espaço-temporais para predizer destinos: como encontrar
+                            trajetos
+                            repetidos
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center align-middle">9h30 - 10h</td>
+                        <td colspan="3" class="text-center font-weight-bold">COFFE BREAK</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center align-middle">10h - 11h</td>
+                        <td>Cledson / Alexandre: Uso de drone no Cadastro Urbano</td>
+                        <td>Marcello Benigno: Desenvolvendo aplicações SIG-Web com o GeoDjango</td>
+                        <td>Leandro França</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center align-middle">11h - 12h</td>
+                        <td>Norma de Georreferenciamento / Uso de drone para obtenção de limites</td>
+                        <td>Geração da Cartografia para o Cadastro por Drone</td>
+                        <td>Palestrante 7</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center align-middle">14h - 18h</td>
+                        <td>Minicurso 01: Introdução ao R aplicado ao Geoprocessamento</td>
+                        <td>Minicurso 02: Confecção de mapas com o uso do QGis / Práticas com Estação Total</td>
+                        <td>Minicurso 03: GNSS Aplicado ao Mapeamento com Drone</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
 
         </div><!-- End Section Title -->
